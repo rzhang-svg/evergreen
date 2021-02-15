@@ -1,0 +1,10 @@
+.filter-value{
+    max-width: 20%;
+    margin-left: 250px;
+    padding-right: 100px;
+}
+
+.filter-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
