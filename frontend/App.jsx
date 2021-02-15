@@ -95,7 +95,6 @@ function ListVendors(user) {
   const { loading, error, data } = useQuery(GET_VENDORS_QUERY);
   if (loading) return 'loading';
   if (error) return `Error! ${error}`;
-  // console.log(data.vendors);
   const admin = user.admin;
   return (
     <VendorTable vendors_list={data.vendors} isAdmin={admin} query={UPDATE_VENDOR_QUERY} />

@@ -64,7 +64,6 @@ class UpdateVendor(Mutation):
   def mutate(root, info, id, category, status):
     query = Vendor.get_query(info)
     vendor =  db_session.query(VendorModel).filter_by(id=id).first()
-    print("heres the vendor:", vendor.id)
     setattr(vendor,"category", category)
     setattr(vendor, "status", status)
     db_session.commit()
